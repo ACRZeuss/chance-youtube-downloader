@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useState } from "react";
-import logo from "./assets/ytlogo.svg";
 
 const App = () => {
   const [urlValue, setUrlValue] = useState("");
@@ -15,14 +14,11 @@ const App = () => {
   };
 
   return (
-    <div className=" bg-yellow-500 flex flex-col justify-center items-center min-h-screen">
+    <div className="flex flex-col justify-center items-center min-h-screen">
       <div className="flex flex-row justify-center items-center">
-        <div>
-          <img className=" w-20 h-20" src={logo} alt="logo" />
-        </div>
         <div className="text-4xl font-bold">
-          <h1>
-            Chance <span className=" text-red-700">Youtube</span> downloader
+          <h1 className="main-text">
+            Youtube Video Downloader
           </h1>
         </div>
       </div>
@@ -30,14 +26,14 @@ const App = () => {
         <div>
           <input
             type="text"
-            placeholder="Enter url"
+            placeholder="Enter video link..."
             value={urlValue}
             onChange={(e) => setUrlValue(e.target.value)}
-            className=" outline-none p-2 bg-yellow-500 border-2 border-gray-500 rounded-md md:mr-4"
+            className="black outline-none p-2 border-2 border-gray-500 rounded-md md:mr-4"
           />
         </div>
-        <div className=" bg-black text-yellow-500 py-2 px-6 rounded-md cursor-pointer">
-          <button onClick={handleDownload}>download</button>
+        <div className=" bg-black py-2 px-6 rounded-md cursor-pointer">
+          <button onClick={handleDownload}>Download</button>
         </div>
       </div>
 
@@ -46,8 +42,8 @@ const App = () => {
           <div>
             <div className="my-4">
               <iframe
-                width="570"
-                height="320"
+                width="auto"
+                height="auto"
                 src={`${data.data.url}`}
                 title="video"
               />
@@ -69,7 +65,7 @@ const App = () => {
             </div>
           </div>
         ) : (
-          <div className=" text-red-700 font-bold mt-10">No download yet</div>
+          <div className="font-bold mt-10">No download yet</div>
         )}
       </div>
     </div>

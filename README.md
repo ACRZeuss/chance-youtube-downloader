@@ -1,4 +1,4 @@
-# chance-youtube-downloader
+# youtube-downloader-by-acrzeuss
 This app allows you to download video(s) from youtube
 
 ![2023-03-07_18-00](https://user-images.githubusercontent.com/67952319/223479814-36c3ebce-858e-42de-aad2-923f51d368f4.png)

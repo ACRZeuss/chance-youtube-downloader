@@ -14,8 +14,8 @@ Use the following commands to get started with the project
 
 Backend
 ```js
-git clone [https://github.com/chanceDira/chance-youtube-downloader.git](https://github.com/ACRZeuss/youtube-downloader-by-acrzeuss.git)
-cd chance-youtube-downloader
+git clone https://github.com/ACRZeuss/youtube-downloader-by-acrzeuss.git
+cd youtube-downloader-by-acrzeuss
 cd backend
 npm install
 npm run dev
@@ -24,8 +24,8 @@ open http://localhost:4000
 
 Frontend
 ```js
-git clone [https://github.com/chanceDira/chance-youtube-downloader.git](https://github.com/ACRZeuss/youtube-downloader-by-acrzeuss.git)
-cd chance-youtube-downloader
+git clone https://github.com/ACRZeuss/youtube-downloader-by-acrzeuss.git
+cd youtube-downloader-by-acrzeuss
 cd frontend
 npm install
 npm run dev
